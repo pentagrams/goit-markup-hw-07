@@ -29,7 +29,7 @@ svg {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
     margin: 0 auto;
   }
 }
@@ -376,6 +376,8 @@ svg {
 .header-logo {
   display: block;
   padding: 16px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
@@ -389,6 +391,12 @@ svg {
 }
 
 .header .nav-wrapper.is-open {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +405,9 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 2;
+  width: 100%;
   padding-bottom: 60px;
+  border-top: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {

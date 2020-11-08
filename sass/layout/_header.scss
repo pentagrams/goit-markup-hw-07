@@ -20,6 +20,7 @@
   &-logo {
     display: block;
     padding: 16px 0;
+    box-sizing: border-box;
 
     @media screen and (min-width: 768px) {
       padding: 26px 0;
@@ -29,10 +30,17 @@
   .nav-wrapper {
     display: none;
     &.is-open {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: $color-white;
       display: flex;
       flex-direction: column;
       z-index: 2;
+      width: 100%;
       padding-bottom: 60px;
+      border-top: 1px solid #ececec;
     }
 
     @media screen and (min-width: 768px) {
