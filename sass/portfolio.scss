@@ -1,14 +1,10 @@
 @import "utils/variables";
 @import "utils/reset";
 @import "base/container";
-@import "components/modal";
 @import "components/logo";
 @import "components/title";
 @import "components/button";
 @import "layout/header";
-@import "layout/hero";
-@import "layout/features";
-@import "layout/occupation";
-@import "layout/team";
-@import "layout/customers";
+@import "layout/portfolio-navigation";
+@import "layout/portfolio-table";
 @import "layout/footer";

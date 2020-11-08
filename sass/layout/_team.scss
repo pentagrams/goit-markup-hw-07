@@ -70,13 +70,13 @@
   }
 }
 
-.social li {
+.social-item {
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social li a {
+.social-item a {
   display: block;
   padding: 12px;
   border-radius: 50%;
@@ -88,16 +88,16 @@
     width: 20px;
     height: 20px;
   }
+}
 
-  & li a:hover svg,
-  & li a:focus svg,
-  & li a:focus svg {
-    fill: $color-white;
-  }
+.social-item a:hover svg,
+.social-item a:focus svg,
+.social-item a:focus svg {
+  fill: $color-white;
+}
 
-  & li a:hover,
-  & li a:focus {
-    background-color: $color-blue;
-    fill: $color-white;
-  }
+.social-item a:hover,
+.social-item a:focus {
+  background-color: $color-blue;
+  fill: $color-white;
 }
